@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Leaflet Map Example</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="info-div">
+      <h2>เส้นทางของคนขับรถ TQM</h2>
+      <p>จุดพิกัดรับผู้โดยสาร: <span id="PointA"></span></p>
+      <p>เวลารับผู้โดยสาร: <span id="PointATime"></span></p>
+      <p>จุดพิกัดส่งผู้โดยสาร: <span id="PointB"></span></p>
+      <p>เวลาส่งผู้โดยสาร: <span id="PointBTime"></span></p>
+      <p>เวลาที่ใช้ดินทาง: <span id="Time"></span></p>
+      <p>ระยะทั้งหมด: <span id="Distance"></span></p>
+  </div>
+
+    <!-- Include Leaflet library and your JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
